@@ -9,7 +9,7 @@
 
 **Sistema de casa inteligente con comunicación en tiempo real entre dispositivos IoT y interfaz web**
 
-[Ver Demo](#-demo) • [Instalación](#-instalación) • [Documentación](#-documentación) • [Contribuir](#-contribuir)
+[Instalación](#-instalación) • [Documentación](#-documentación) • [Contribuir](#-contribuir)
 
 </div>
 
