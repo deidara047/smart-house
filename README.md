@@ -215,45 +215,6 @@ python app.py            # Servidor Flask
 - [ ] 🔄 Panel de administración
 - [ ] 🔄 API REST completa
 
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas! Por favor:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
-## 👥 Equipo
-
-- **Desarrollador Principal**: [Tu Nombre](https://github.com/tu-usuario)
-- **Contribuidores**: Ver [CONTRIBUTORS.md](CONTRIBUTORS.md)
-
-## 📞 Soporte
-
-Si tienes preguntas o necesitas ayuda:
-
-- 📧 Email: tu-email@ejemplo.com
-- 🐛 Issues: [GitHub Issues](https://github.com/tu-usuario/smart-home-iot/issues)
-- 💬 Discusiones: [GitHub Discussions](https://github.com/tu-usuario/smart-home-iot/discussions)
-
-## 🙏 Agradecimientos
-
-- [Nuxt.js](https://nuxt.com/) por el framework frontend
-- [Flask](https://flask.palletsprojects.com/) por el framework backend
-- [Socket.IO](https://socket.io/) por la comunicación WebSocket
-- [Tailwind CSS](https://tailwindcss.com/) por el sistema de diseño
-
----
-
-<div align="center">
-
-**⭐ Si te gusta este proyecto, ¡dale una estrella! ⭐**
 
 [Volver arriba](#-smart-home-iot-system)
 
