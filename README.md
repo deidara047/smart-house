@@ -17,16 +17,16 @@
 
 ## 📋 Descripción
 
-Este proyecto implementa un **sistema de casa inteligente completo** que permite controlar y monitorear dispositivos IoT (Arduino/Raspberry Pi) a través de una interfaz web moderna. El sistema utiliza WebSockets para comunicación bidireccional en tiempo real entre la interfaz web y los dispositivos físicos.
+Este proyecto implementa un **prototipo de sistema de casa inteligente** con simulador integrado que permite desarrollar y probar la funcionalidad de control domótico a través de una interfaz web moderna. El sistema utiliza WebSockets para comunicación bidireccional en tiempo real y está diseñado como base para futura integración con dispositivos IoT reales (Arduino/Raspberry Pi).
 
 ### ✨ Características Principales
 
-- 🎛️ **Control Remoto**: Gestiona luces, sensores y dispositivos desde cualquier lugar
-- 📊 **Monitoreo en Tiempo Real**: Visualización instantánea de datos de sensores
-- 🔄 **Comunicación Bidireccional**: Sincronización automática entre interfaz y dispositivos
+- 🎛️ **Control Simulado**: Gestiona luces, sensores y dispositivos en entorno simulado
+- 📊 **Monitoreo en Tiempo Real**: Visualización instantánea de datos de sensores simulados
+- 🔄 **Comunicación Bidireccional**: Sincronización automática entre interfaz y simulador
 - 📱 **Interfaz Responsiva**: Funciona en desktop, tablet y móvil
 - 📈 **Historial de Acciones**: Registro completo de todas las operaciones
-- 🎮 **Simulador Integrado**: Prueba el sistema sin hardware físico
+- 🎮 **Simulador Integrado**: Prueba el sistema sin hardware físico (listo para migrar a IoT real)
 
 ## 🏗️ Arquitectura del Sistema
 
@@ -40,29 +40,31 @@ Este proyecto implementa un **sistema de casa inteligente completo** que permite
          │                                     │
          ▼                                     ▼
 ┌─────────────────┐                  ┌─────────────────┐
-│   Interfaz Web  │                  │   Dispositivos  │
-│   - Dashboard   │                  │   IoT           │
-│   - Simulador   │                  │   - Arduino     │
-│   - Gráficas    │                  │   - Raspberry   │
+│   Interfaz Web  │                  │   Simulador     │
+│   - Dashboard   │                  │   de Dispositivos│
+│   - Simulador   │                  │   (Preparado    │
+│   - Gráficas    │                  │    para IoT)    │
 └─────────────────┘                  └─────────────────┘
 ```
 
-## 🎯 Dispositivos Controlados
+## 🎯 Dispositivos Simulados
 
-### 💡 Dispositivos Digitales (ON/OFF)
+### 💡 Dispositivos Digitales (ON/OFF) - Simulados
 - **Iluminación**: Cuarto 1, Cuarto 2, Sala, Cocina, Entrada
 - **Seguridad**: Sensor de fuego
 - **Climatización**: Ventilador
 - **Utilidades**: Bomba de agua, Anuncio rotante
 
-### 📊 Sensores Analógicos
-- **Temperatura**: Monitoreo continuo con alertas
-- **Sonido**: Detección de niveles de ruido
-- **Humedad**: Control ambiental
+### 📊 Sensores Analógicos - Simulados
+- **Temperatura**: Monitoreo continuo con alertas (simulado)
+- **Sonido**: Detección de niveles de ruido (simulado)
+- **Humedad**: Control ambiental (simulado)
 
-### 🖥️ Periféricos
-- **Display LCD**: Texto superior e inferior personalizable
-- **Teclado**: Botones B, #, 2, Enter
+### 🖥️ Periféricos Simulados
+- **Display LCD**: Texto superior e inferior personalizable (simulado)
+- **Teclado**: Botones B, #, 2, Enter (simulado)
+
+> **Nota**: Todos los dispositivos están actualmente simulados. El sistema está diseñado para ser fácilmente migrado a hardware real (Arduino/Raspberry Pi).
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -84,7 +86,8 @@ Este proyecto implementa un **sistema de casa inteligente completo** que permite
 ### IoT & Comunicación
 - **WebSockets** - Comunicación en tiempo real
 - **REST API** - Endpoints para dispositivos
-- **Arduino/Raspberry Pi** - Hardware IoT (pendiente)
+- **Simulador IoT** - Entorno de desarrollo sin hardware
+- **Arduino/Raspberry Pi** - Hardware IoT (preparado para futura integración)
 
 ## 📦 Instalación
 
@@ -161,8 +164,9 @@ Este proyecto implementa un **sistema de casa inteligente completo** que permite
 
 ### Simulador IoT
 - Navega a la página "Simulador Arduino/Raspberry"
-- Prueba la comunicación bidireccional
+- Prueba la comunicación bidireccional con dispositivos simulados
 - Simula datos de sensores y comandos de dispositivos
+- Ideal para desarrollo y testing antes de conectar hardware real
 
 ### Comunicación WebSocket
 El sistema utiliza un protocolo específico para la comunicación:
@@ -206,14 +210,16 @@ python app.py            # Servidor Flask
 
 - [x] ✅ Interfaz web completa
 - [x] ✅ Sistema de WebSockets
-- [x] ✅ Simulador de dispositivos
-- [x] ✅ Control bidireccional
-- [ ] 🔄 Integración con Arduino/Raspberry Pi
+- [x] ✅ Simulador de dispositivos IoT
+- [x] ✅ Control bidireccional simulado
+- [x] ✅ Protocolo de comunicación definido
+- [ ] 🔄 Integración real con Arduino/Raspberry Pi
 - [ ] 🔄 Conexión a MongoDB Atlas
 - [ ] 🔄 Sistema de autenticación
 - [ ] 🔄 Notificaciones push
 - [ ] 🔄 Panel de administración
 - [ ] 🔄 API REST completa
+- [ ] 🔄 Migración del simulador a hardware real
 
 
 [Volver arriba](#-smart-home-iot-system)
